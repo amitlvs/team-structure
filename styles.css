@@ -195,3 +195,7 @@ footer{padding:34px 0;border-top:1px solid var(--line);font-size:13px;color:var(
 .client-answers{grid-template-columns:repeat(4,1fr)}
 @media(max-width:900px){.client-answers{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:560px){.client-answers{grid-template-columns:1fr}}
+.person-card{cursor:pointer}.person-card:after{content:"View profile  ->";position:absolute;right:12px;bottom:9px;color:#7040c7;font-size:9px;font-weight:800;letter-spacing:.02em;opacity:.68;transition:opacity .2s ease,transform .2s ease}.person-card:hover,.person-card:focus-visible{border-color:#9879df;box-shadow:0 14px 28px rgba(78,25,216,.15);outline:none;transform:translateY(-5px)}.person-card:hover:after,.person-card:focus-visible:after{opacity:1;transform:translateX(3px)}
+.profile-portfolio{display:inline-flex;align-items:center;gap:5px;margin-top:9px;padding:6px 9px;border:1px solid #cdbcf4;background:#f2edff;color:#5423b4;font-size:11px;font-weight:900;text-decoration:none;transition:background .2s ease,color .2s ease,transform .2s ease}.profile-portfolio:after{content:"->";font-size:12px}.profile-portfolio:hover,.profile-portfolio:focus-visible{background:#5423b4;color:#fff;transform:translateY(-2px);outline:none}
+@media(max-width:700px){.person-card:after{right:16px;bottom:9px}.person-detail{padding-right:86px}}
+@media(prefers-reduced-motion:reduce){.person-card,.profile-portfolio{animation:none;transition:none}}
