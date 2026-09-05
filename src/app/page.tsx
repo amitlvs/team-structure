@@ -207,20 +207,10 @@ export default function Home() {
       <section className="client-brief" aria-labelledby="client-brief-title">
         <div className="client-brief-heading"><div className="eyebrow">Client questions</div><h2 id="client-brief-title">Websites, web applications, and mobile apps.</h2><p>Inspect individual capability, or use these delivery answers when planning an engagement.</p></div>
         <div className="client-answers">
-          <article><div className="answer-icon"><AppIcon type="web" /></div><h3>Small landing page</h3><strong>Approximately 1-2 weeks</strong><p>Responsive page, forms, analytics, content integration, testing, and deployment.</p></article>
-          <article><div className="answer-icon"><AppIcon type="app" /></div><h3>Small application</h3><strong>Approximately 4-5 weeks</strong><p>A focused application or MVP with defined workflows, API, database, testing, and deployment.</p></article>
-          <article><div className="answer-icon"><AppIcon type="large" /></div><h3>Large application</h3><strong>Planned after discovery</strong><p>Scope, integrations, security, dependencies, milestones, and acceptance criteria determine the timeline.</p></article>
-          <article><div className="answer-icon"><AppIcon type="mobile" /></div><h3>Mobile application</h3><strong>iOS and Android delivery</strong><p>React Native capability supports cross-platform mobile applications with shared product and API foundations.</p></article>
-        </div>
-      </section>
-
-      <section className="commercial-guide" aria-labelledby="commercial-title">
-        <div className="client-brief-heading"><div className="eyebrow">Commercial planning</div><h2 id="commercial-title">Rough estimates for early conversations.</h2><p>These are planning ranges, not fixed quotes. Final pricing follows scope, requirements, integrations, content, and acceptance criteria.</p></div>
-        <div className="commercial-grid">
-          <article><h3>Landing page</h3><strong>1-2 weeks</strong><p>Typical effort for responsive UI, forms, analytics, content integration, testing, and deployment.</p><span className="estimate-note">Quote after requirements and assets are confirmed.</span></article>
-          <article><h3>Small web or mobile app</h3><strong>4-5 weeks</strong><p>Typical effort for a focused MVP with defined screens, API, database, testing, and deployment.</p><span className="estimate-note">React Native supports iOS and Android delivery.</span></article>
-          <article><h3>Large application</h3><strong>Discovery first</strong><p>Estimate depends on modules, integrations, security, migration, scale, dependencies, and team composition.</p><span className="estimate-note">Milestone-based proposal recommended.</span></article>
-          <article className="rate-card"><h3>Hourly pricing</h3><strong>Shared on request</strong><p>Use a blended team rate for client proposals unless individual rates have been formally approved.</p><span className="estimate-note">Avoid publishing unconfirmed per-person rates.</span></article>
+          <article><div className="answer-icon"><AppIcon type="web" /></div><h3>Small landing page</h3><strong>Approximately 1-2 weeks</strong><b className="price-range">₹25,000-₹60,000</b><p>Indicative draft estimate for responsive UI, forms, analytics, content integration, testing, and deployment.</p></article>
+          <article><div className="answer-icon"><AppIcon type="app" /></div><h3>Small application</h3><strong>Approximately 4-5 weeks</strong><b className="price-range">₹1,50,000-₹3,50,000</b><p>Indicative draft estimate for a focused MVP with defined screens, API, database, testing, and deployment.</p></article>
+          <article><div className="answer-icon"><AppIcon type="large" /></div><h3>Large application</h3><strong>Discovery first</strong><b className="price-range">₹50,000-₹1,50,000 discovery</b><p>Indicative discovery range. The full build estimate follows scope, integrations, security, migration, scale, and milestones.</p></article>
+          <article><div className="answer-icon"><AppIcon type="mobile" /></div><h3>Mobile application</h3><strong>iOS and Android delivery</strong><b className="price-range">₹2,00,000-₹5,00,000</b><p>Indicative draft estimate for a focused React Native app with shared product and API foundations.</p></article>
         </div>
       </section>
 
