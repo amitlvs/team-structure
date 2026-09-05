@@ -175,7 +175,6 @@ export default function Home() {
   return (
     <main className="site-shell">
       <header className="topbar">
-        <a className="back-button" href="#top" aria-label="Back to top">&larr;</a>
         <div className="breadcrumb"><span>Workspace</span><b>/</b><strong>Organisation structure</strong></div>
         <div className="topbar-status"><span>Client-ready team profile</span><span className="topbar-avatar">A</span></div>
       </header>
@@ -205,11 +204,13 @@ export default function Home() {
       </section>
 
       <section className="client-brief" aria-labelledby="client-brief-title">
-        <div className="client-brief-heading"><div className="eyebrow">Client questions</div><h2 id="client-brief-title">Websites, web applications, and mobile apps.</h2><p>Inspect individual capability, or use these delivery answers when planning an engagement.</p></div>
+        <div className="client-brief-heading"><div className="eyebrow">Our deliverables</div><h2 id="client-brief-title">Websites, web applications, and mobile apps.</h2><p>Explore our delivery capabilities and indicative planning ranges.</p></div>
         <div className="client-answers">
           <article><div className="answer-icon"><AppIcon type="web" /></div><h3>Small landing page</h3><strong>Approximately 1-2 weeks</strong><b className="price-range">₹25,000-₹60,000</b><p>Indicative draft estimate for responsive UI, forms, analytics, content integration, testing, and deployment.</p></article>
           <article><div className="answer-icon"><AppIcon type="app" /></div><h3>Small application</h3><strong>Approximately 4-5 weeks</strong><b className="price-range">₹1,50,000-₹3,50,000</b><p>Indicative draft estimate for a focused MVP with defined screens, API, database, testing, and deployment.</p></article>
-          <article><div className="answer-icon"><AppIcon type="large" /></div><h3>Large application</h3><strong>Discovery first</strong><b className="price-range">₹50,000-₹1,50,000 discovery</b><p>Indicative discovery range. The full build estimate follows scope, integrations, security, migration, scale, and milestones.</p></article>
+          <article><div className="answer-icon"><AppIcon type="app" /></div><h3>Mid-sized application</h3><strong>Approximately 4-5 weeks</strong><b className="price-range">₹2,00,000-₹10,00,000</b><p>Indicative draft estimate for a focused application with defined screens, API, database, testing, and deployment.</p></article>
+          <article><div className="answer-icon"><AppIcon type="large" /></div><h3>Large application</h3><strong>Based on requirements</strong><b className="price-range">Requirement-based estimate</b><p>Timeline and price depend on modules, integrations, security, migration, scale, dependencies, and milestones.</p></article>
+            <div className="drawer-top"><div className={`person-avatar ${selected.avatarClass}`}>{selected.initials}</div><div><div className="eyebrow">{selected.id === "amit" ? "Team lead profile" : "Team member profile"}</div><h2 id="profile-name">{selected.name}</h2><p>{selected.role}</p>{selected.portfolio && <a className="profile-portfolio" href={selected.portfolio} target="_blank" rel="noreferrer">View portfolio -&gt;</a>}{selected.id === "amit" && <a className="profile-contact" href="https://wa.me/918550000499" target="_blank" rel="noreferrer">WhatsApp: +91 85500 00499 -&gt;</a>}</div></div><div className="drawer-stats"><span><b>{selected.experience}</b> experience</span><span>{selected.fit}</span></div><div className="drawer-section"><h3>Primary and dependent skills</h3><div className="profile-skills">{selected.skills.map((skill) => <span key={skill}>{skill}</span>)}</div></div><div className="drawer-section"><h3>How the skillset connects</h3><p>{selected.dependencies}</p></div><div className="drawer-section"><h3>Best fit for</h3><p>{selected.summary}</p></div></div></aside>}
           <article><div className="answer-icon"><AppIcon type="mobile" /></div><h3>Mobile application</h3><strong>iOS and Android delivery</strong><b className="price-range">₹2,00,000-₹5,00,000</b><p>Indicative draft estimate for a focused React Native app with shared product and API foundations.</p></article>
         </div>
       </section>
