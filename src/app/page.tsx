@@ -214,6 +214,16 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="commercial-guide" aria-labelledby="commercial-title">
+        <div className="client-brief-heading"><div className="eyebrow">Commercial planning</div><h2 id="commercial-title">Rough estimates for early conversations.</h2><p>These are planning ranges, not fixed quotes. Final pricing follows scope, requirements, integrations, content, and acceptance criteria.</p></div>
+        <div className="commercial-grid">
+          <article><h3>Landing page</h3><strong>1-2 weeks</strong><p>Typical effort for responsive UI, forms, analytics, content integration, testing, and deployment.</p><span className="estimate-note">Quote after requirements and assets are confirmed.</span></article>
+          <article><h3>Small web or mobile app</h3><strong>4-5 weeks</strong><p>Typical effort for a focused MVP with defined screens, API, database, testing, and deployment.</p><span className="estimate-note">React Native supports iOS and Android delivery.</span></article>
+          <article><h3>Large application</h3><strong>Discovery first</strong><p>Estimate depends on modules, integrations, security, migration, scale, dependencies, and team composition.</p><span className="estimate-note">Milestone-based proposal recommended.</span></article>
+          <article className="rate-card"><h3>Hourly pricing</h3><strong>Shared on request</strong><p>Use a blended team rate for client proposals unless individual rates have been formally approved.</p><span className="estimate-note">Avoid publishing unconfirmed per-person rates.</span></article>
+        </div>
+      </section>
+
       <footer className="footer"><span>People &amp; delivery workspace</span><span>Updated 2026</span></footer>
 
       {selected && <aside className="profile-drawer is-open" aria-hidden="false"><button className="drawer-backdrop" aria-label="Close profile" onClick={() => setSelected(null)} /><div className="drawer-panel" role="dialog" aria-modal="true" aria-labelledby="profile-name"><button className="drawer-close" onClick={() => setSelected(null)} aria-label="Close profile">&times;</button><div className="drawer-top"><div className={`person-avatar ${selected.avatarClass}`}>{selected.initials}</div><div><div className="eyebrow">{selected.id === "amit" ? "Team lead profile" : "Team member profile"}</div><h2 id="profile-name">{selected.name}</h2><p>{selected.role}</p>{selected.portfolio && <a className="profile-portfolio" href={selected.portfolio} target="_blank" rel="noreferrer">View portfolio -&gt;</a>}</div></div><div className="drawer-stats"><span><b>{selected.experience}</b> experience</span><span>{selected.fit}</span></div><div className="drawer-section"><h3>Primary and dependent skills</h3><div className="profile-skills">{selected.skills.map((skill) => <span key={skill}>{skill}</span>)}</div></div><div className="drawer-section"><h3>How the skillset connects</h3><p>{selected.dependencies}</p></div><div className="drawer-section"><h3>Best fit for</h3><p>{selected.summary}</p></div></div></aside>}
